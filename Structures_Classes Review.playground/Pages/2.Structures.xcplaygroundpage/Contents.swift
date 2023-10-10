@@ -11,6 +11,21 @@ import Foundation
  
  
  */
+struct Band {
+    var genre: String
+    var members: Int
+    var isActive: Bool
+    
+    func pumpUpCrowd()-> String{
+        if(self.isActive == true)
+        {
+            return "Are you ready to ROCK?"
+        }
+        else{
+            return "..."
+        }
+    }
+}
 
 
 /*:
@@ -22,7 +37,7 @@ import Foundation
  
  
  */
-
+let maroon5 = Band(genre: "pop", members: 5, isActive: true)
 
 
 /*:
@@ -47,7 +62,7 @@ import Foundation
  isActive: true.
  
  */
-
+let fooFighters = Band(genre: "rock", members: 6, isActive: true)
 
 /*:
  Under the declaration of journey, create a variable named bandsNewGenre call .changeGenre() on journey with the argument newGenre: "rock".

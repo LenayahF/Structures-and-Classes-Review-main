@@ -8,7 +8,28 @@ import Foundation
 * accountHolder (String)
 * balance (Double)
 */
-
+class BankAccount {
+    var accountNumber: String
+    var accountHolder: String
+    var balance: Double
+    
+    init(accountNumber:String, accountHolder:String, balance:Double)
+    {
+        self.accountHolder = accountHolder
+        self.accountNumber = accountNumber
+        self.balance = balance
+    }
+    
+    func deposit(add:Double)
+    {
+        balance += add
+    }
+    
+    func withdraw(subtract: Double)
+    {
+        balance -= subtract
+    }
+}
 
 
 
@@ -42,7 +63,7 @@ import Foundation
 /*: INHERITANCE
 
 1. Create a SavingsAccount class that inherits from the BankAccount class.*/
- 
+ class 
  
  
  
